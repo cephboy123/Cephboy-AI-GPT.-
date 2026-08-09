@@ -1,12 +1,14 @@
-# Cephboy-AI-GPT.-
+# Cephboy AI GPT — Monorepo
 
-Dépôt initial pour la fusion des projets ChatGPT en "Cephboy AI GPT".
+Ce repository contient une structure monorepo conçue pour fusionner les fonctionnalités issues de trois projets sources (lencx/ChatGPT, xtekky/chatgpt-clone, Chanzhaoyu/chatgpt-web) dans une base cohérente, optimisée pour déploiement web sur Vercel.
 
-Cette branche par défaut contient un commit d'initialisation. Le travail de fusion des 3 projets publics (lencx/ChatGPT, xtekky/chatgpt-clone, Chanzhaoyu/chatgpt-web) sera effectué sur la branche `merge/cephboy-ai`.
+Structure proposée :
 
-Procédure à suivre :
-1. Le travail de fusion et de nettoyage sera poussé sur `merge/cephboy-ai`.
-2. Les marques ChatGPT seront remplacées par "Cephboy AI GPT" et les clés OpenAI hardcodées seront masquées et remplacées par la variable d'environnement `CEPHBOY_OPENAI_KEY`.
-3. Le livrable final sera optimisé pour un déploiement sur Vercel (web).
+- /web — application Next.js (interface web prête pour Vercel)
+- /services — services backend légers (serverless / API endpoints)
+- /desktop — adaptation / notes pour desktop (Electron / Tauri) (placeholders)
+- /docs — notes de fusion, rapport de modifications, checklist de sécurité
 
-Je vais maintenant créer la branche de travail `merge/cephboy-ai` et cloner les 3 projets publics pour commencer la fusion.
+J’ai copié et adapté les composants essentiels dans /web et isolé le service de génération d’images dans /services pour clarifier le découpage.
+
+Voir README-FR.md pour instructions de déploiement sur Vercel.
